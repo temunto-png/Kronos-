@@ -1,6 +1,6 @@
 # Kronos Trading Decision Engine — セッション進捗
 
-**最終更新:** 2026-04-13  
+**最終更新:** 2026-04-13（Claude Code health改善セッション）  
 **ステータス:** STEP 1〜3 完了 → **次: STEP 4（system_prompt_v3.1.txt 生成）**
 
 ---
@@ -11,6 +11,15 @@
 2. 設計書 `C:\tool\claude\Kronos\kronos_v3.1_prompt_design.md` 参照
 3. **STEP 4: `prompts/system_prompt_v3.1.txt` を設計書 §3 から抜き出して作成**
 4. その後 STEP 5（統合テスト・バックテスト）へ進む
+
+---
+
+## Claude Code環境整備（2026-04-13 完了）
+
+- git初期化 → GitHub `temunto-png/Kronos-` にpush済み（PR #1 マージ済み）
+- `.gitignore` / `.gitattributes` — secrets・pycache・kronos_model除外、LF統一
+- `.claude/settings.local.json` — `Read/Edit/Write/Bash/Glob/Grep` を allowedTools に追加
+- MEMORY.md初期化 — `~/.claude/projects/C--tool-claude-Kronos/memory/`
 
 ---
 
