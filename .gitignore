@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Pytest
+.pytest_cache/
+*.pyc
+
+# Environment & secrets
+.env
+.env.*
+*.env
+.venv/
+env/
+venv/
+
+# Model weights (large binary files)
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.safetensors
+
+# Kronos model repo (cloned separately — has own .git, use as submodule if needed)
+kronos_model/
+
+# Logs & temp
+*.log
+logs/
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Claude Code local settings (may contain tokens/API keys)
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# HuggingFace cache
+.cache/
